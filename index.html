@@ -1,1 +1,82 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capstone Project Overview</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .tile {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .tile:hover {
+      transform: translateY(-4px);
+    }
+    .tile a {
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+    .external-links {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .external-links a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: white;
+      background: #007acc;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Capstone Project</h1>
+  <h2>Explore the Repositories</h2>
+
+  <div class="tiles">
+    <div class="tile">
+      <a href="https://github.com/your-org/robot">Robot Control</a>
+      <p>Code for the robot navigation and hardware integration.</p>
+    </div>
+    <div class="tile">
+      <a href="https://github.com/your-org/vision">Vision System</a>
+      <p>Computer vision for cavity detection and localization.</p>
+    </div>
+    <div class="tile">
+      <a href="https://github.com/your-org/gui">User Interface</a>
+      <p>RQT-based GUI for controlling and monitoring the system.</p>
+    </div>
+    <div class="tile">
+      <a href="https://github.com/your-org/poster">Poster & Docs</a>
+      <p>Final poster, reports, and presentation materials.</p>
+    </div>
+  </div>
+
+  <div class="external-links">
+    <a href="https://your-org.github.io/poster/final_poster.pdf" target="_blank">View Poster (PDF)</a>
+    <a href="https://youtube.com/your-video-link" target="_blank">Watch Demo Video</a>
+  </div>
+</body>
+</html>
+
